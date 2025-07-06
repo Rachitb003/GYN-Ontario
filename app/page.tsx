@@ -18,14 +18,20 @@ export const metadata: Metadata = {
     siteName: "GYN Ontario",
     images: [
       {
-        url: "https://gynontario.org/og-image.jpg",
+        url: "https://gynontario.org/og-image.png", // Updated to use the new image
         width: 1200,
         height: 630,
-        alt: "GYN Ontario - Facebook Ads Marketing Agency",
+        alt: "GYN Ontario - Facebook Ads Marketing Agency with Guaranteed 2× ROI",
       },
     ],
     locale: "en_CA",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GYN Ontario | Facebook Ads Marketing Agency",
+    description: "Grow Your Network with data-driven Facebook Ads. Zero risk, guaranteed 2× ROI.",
+    images: ["https://gynontario.org/og-image.png"], // Updated to use the new image
   },
 }
 

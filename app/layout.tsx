@@ -36,10 +36,10 @@ export const metadata: Metadata = {
       "Grow Your Network with data-driven Facebook Ads. Zero risk, guaranteed 2× ROI. Performance-based partnership model.",
     images: [
       {
-        url: "https://gynontario.org/og-image.jpg",
+        url: "https://gynontario.org/og-image.png", // Updated to use the new image
         width: 1200,
         height: 630,
-        alt: "GYN Ontario - Facebook Ads Marketing Agency",
+        alt: "GYN Ontario - Facebook Ads Marketing Agency with Guaranteed 2× ROI",
       },
     ],
   },
@@ -47,13 +47,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "GYN Ontario | Facebook Ads Marketing Agency",
     description: "Grow Your Network with data-driven Facebook Ads. Zero risk, guaranteed 2× ROI.",
-    images: ["https://gynontario.org/og-image.jpg"],
+    images: ["https://gynontario.org/og-image.png"], // Updated to use the new image
   },
   alternates: {
     canonical: "https://gynontario.org",
   },
   verification: {
-    google: "BuSeabzDR-0VGnLWj4UeMRqWe3-DgQe7YNEGWhHlqe4", // Just the code, not the HTML tag
+    google: "BuSeabzDR-0VGnLWj4UeMRqWe3-DgQe7YNEGWhHlqe4",
   },
     generator: 'v0.dev'
 }
@@ -71,6 +71,10 @@ export default function RootLayout({
         <meta name="theme-color" content="#1e40af" />
         <link rel="canonical" href="https://gynontario.org" />
 
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
         {/* Structured Data for Organization */}
         <script
           type="application/ld+json"
@@ -81,7 +85,7 @@ export default function RootLayout({
               name: "GYN Ontario",
               alternateName: "Grow Your Network Ontario",
               url: "https://gynontario.org",
-              logo: "https://gynontario.org/logo.png",
+              logo: "https://gynontario.org/og-image.png",
               description:
                 "Facebook Ads Marketing Agency with guaranteed 2× ROI and performance-based partnership model.",
               address: {
