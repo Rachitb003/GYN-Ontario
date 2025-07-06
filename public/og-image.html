@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .background-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image: 
+                radial-gradient(circle at 25% 25%, #3b82f6 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, #3b82f6 0%, transparent 50%);
+        }
+        
+        .content {
+            text-align: center;
+            z-index: 2;
+            max-width: 900px;
+            padding: 40px;
+        }
+        
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            color: #3b82f6;
+            margin-bottom: 20px;
+        }
+        
+        .headline {
+            font-size: 72px;
+            font-weight: 900;
+            margin-bottom: 30px;
+            line-height: 1.1;
+        }
+        
+        .subheadline {
+            font-size: 32px;
+            color: #cbd5e1;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+        
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 40px;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            color: #3b82f6;
+            font-weight: 600;
+        }
+        
+        .feature::before {
+            content: "✓";
+            margin-right: 12px;
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-pattern"></div>
+    <div class="content">
+        <div class="logo">GYN Ontario</div>
+        <div class="headline">Grow Your Network</div>
+        <div class="subheadline">Facebook Ads with Guaranteed 2× ROI</div>
+        <div class="features">
+            <div class="feature">Zero Risk</div>
+            <div class="feature">Guaranteed ROI</div>
+            <div class="feature">Performance-Based</div>
+        </div>
+    </div>
+</body>
+</html>

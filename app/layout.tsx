@@ -36,10 +36,18 @@ export const metadata: Metadata = {
       "Grow Your Network with data-driven Facebook Ads. Zero risk, guaranteed 2× ROI. Performance-based partnership model.",
     images: [
       {
-        url: "https://gynontario.org/og-image.png", // Updated to use the new image
+        url: "https://gynontario.org/og-image.png",
         width: 1200,
         height: 630,
         alt: "GYN Ontario - Facebook Ads Marketing Agency with Guaranteed 2× ROI",
+        type: "image/svg+xml",
+      },
+      {
+        url: "/placeholder.svg?height=630&width=1200&text=GYN%20Ontario%20-%20Grow%20Your%20Network",
+        width: 1200,
+        height: 630,
+        alt: "GYN Ontario - Grow Your Network",
+        type: "image/svg+xml",
       },
     ],
   },
@@ -47,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "GYN Ontario | Facebook Ads Marketing Agency",
     description: "Grow Your Network with data-driven Facebook Ads. Zero risk, guaranteed 2× ROI.",
-    images: ["https://gynontario.org/og-image.png"], // Updated to use the new image
+    images: ["https://gynontario.org/og-image.png"],
   },
   alternates: {
     canonical: "https://gynontario.org",
@@ -70,6 +78,16 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#1e40af" />
         <link rel="canonical" href="https://gynontario.org" />
+
+        {/* Manual Open Graph tags for better compatibility */}
+        <meta property="og:image" content="https://gynontario.org/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="GYN Ontario - Facebook Ads Marketing Agency with Guaranteed 2× ROI" />
+
+        {/* Twitter Card tags */}
+        <meta name="twitter:image" content="https://gynontario.org/og-image.png" />
+        <meta name="twitter:image:alt" content="GYN Ontario - Grow Your Network" />
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
