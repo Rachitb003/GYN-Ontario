@@ -40,14 +40,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "GYN Ontario - Facebook Ads Marketing Agency with Guaranteed 2× ROI",
-        type: "image/svg+xml",
-      },
-      {
-        url: "/placeholder.svg?height=630&width=1200&text=GYN%20Ontario%20-%20Grow%20Your%20Network",
-        width: 1200,
-        height: 630,
-        alt: "GYN Ontario - Grow Your Network",
-        type: "image/svg+xml",
+        type: "image/png",
       },
     ],
   },
@@ -63,6 +56,14 @@ export const metadata: Metadata = {
   verification: {
     google: "BuSeabzDR-0VGnLWj4UeMRqWe3-DgQe7YNEGWhHlqe4",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/svg+xml" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/svg+xml" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/svg+xml" }],
+  },
     generator: 'v0.dev'
 }
 
@@ -76,8 +77,17 @@ export default function RootLayout({
       <head>
         {/* Additional SEO meta tags */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#1e40af" />
+        <meta name="theme-color" content="#3b82f6" />
         <link rel="canonical" href="https://gynontario.org" />
+
+        {/* Favicon links for better browser compatibility */}
+        <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+        <link rel="icon" type="image/svg+xml" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/svg+xml" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+        {/* Fallback for older browsers */}
+        <link rel="shortcut icon" href="/favicon.png" />
 
         {/* Manual Open Graph tags for better compatibility */}
         <meta property="og:image" content="https://gynontario.org/og-image.png" />
@@ -89,10 +99,6 @@ export default function RootLayout({
         <meta name="twitter:image" content="https://gynontario.org/og-image.png" />
         <meta name="twitter:image:alt" content="GYN Ontario - Grow Your Network" />
 
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
         {/* Structured Data for Organization */}
         <script
           type="application/ld+json"
@@ -103,7 +109,7 @@ export default function RootLayout({
               name: "GYN Ontario",
               alternateName: "Grow Your Network Ontario",
               url: "https://gynontario.org",
-              logo: "https://gynontario.org/og-image.png",
+              logo: "https://gynontario.org/favicon-32x32.png",
               description:
                 "Facebook Ads Marketing Agency with guaranteed 2× ROI and performance-based partnership model.",
               address: {
